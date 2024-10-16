@@ -23,7 +23,7 @@
   }
 
   #profile,
-  section-container {
+  .section-container {
     display: block;
   }
 
@@ -32,7 +32,7 @@
   }
 
   section,
-  section-container {
+  .section-container {
     height: fit-content;
   }
 
@@ -44,6 +44,12 @@
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
+  }
+
+  .about-pic {
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
   }
 
   .about-containers {

@@ -349,8 +349,8 @@ article {
   gap: 0.5rem;
 }
 
-article .icon {
-  cursor: default;
+article h3 {
+  white-space: nowrap;
 }
 
 /* PROJECTS */

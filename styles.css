@@ -408,7 +408,6 @@ article .icon {
   max-width: 800px !important;
   margin: 0 auto !important; /* center horizontally */
   display: block !important; /* ensure it's visible */
-  background: rgba(255,0,0,0.1) !important; /* temporary red background to debug */
 }
 
 /* Mobile: full width */
@@ -425,8 +424,10 @@ article .icon {
 }
 
 #project-video .arrow {
-  /* nudge arrow so it doesn't overlap content on smaller screens */
-  right: -3rem;
+  /* Follow same pattern as other sections */
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
 }
 
 /* CONTACT */

@@ -1,15 +1,28 @@
+/**
+ * Portfolio Website - Media Queries
+ * Author: Victor Ulloa
+ * Description: Responsive design breakpoints for optimal viewing across devices
+ * Mobile-first approach with specific breakpoints for tablet and desktop
+ */
+
+/* ===== DESKTOP LARGE (up to 1400px) ===== */
+/* Adjustments for smaller desktop screens and large laptops */
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
   }
 
+  /* Allow about containers to wrap on smaller screens */
   .about-containers {
     flex-wrap: wrap;
   }
 }
 
+/* ===== TABLET & SMALL DESKTOP (up to 1200px) ===== */
+/* Major layout changes for tablet and smaller desktop screens */
 @media screen and (max-width: 1200px) {
+  /* Switch from desktop navigation to mobile hamburger menu */
   #desktop-nav {
     display: none;
   }
@@ -17,110 +30,135 @@
     display: flex;
   }
 
+  /* Adjust experience section spacing */
   #experience,
   .experience-details-containers {
     margin-top: 2rem;
   }
 
+  /* Change layout from flex to block for better mobile experience */
   #profile,
   .section-container {
     display: block;
   }
 
+  /* Hide arrow navigation on mobile - better UX without arrows */
   .arrow {
     display: none;
   }
 
+  /* Make sections fit content height instead of fixed heights */
   section,
   .section-container {
     height: fit-content;
   }
 
+  /* Add horizontal margins for better mobile spacing */
   section {
     margin: 0 5%;
   }
 
+  /* Standardize profile picture size and center it */
   .section__pic-container {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
   }
 
+  /* Ensure about picture fills container properly */
   .about-pic {
     width: 100%;
     object-fit: cover;
     object-position: bottom;
   }
 
+  /* Remove top margin from about containers */
   .about-containers {
     margin-top: 0;
   }
 }
 
+/* ===== MOBILE (up to 600px) ===== */
+/* Optimizations for mobile phone screens */
 @media screen and (max-width: 600px) {
+  /* Reduce height for contact and footer on mobile */
   #contact,
   footer {
     height: 40vh;
   }
 
+  /* Adjust profile section height */
   #profile {
     height: 83vh;
     margin-bottom: 0;
   }
 
+  /* Reduce article font size for mobile readability */
   article {
     font-size: 1rem;
   }
 
+  /* Optimize footer navigation spacing */
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;
   }
 
+  /* Enable flex-wrap for better mobile layout */
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
   }
 
+  /* Stack education containers vertically on mobile */
   .about-containers_education {
     flex-direction: column;
   }
 
+  /* Remove margins from contact info containers */
   .contact-info-container {
     margin: 0;
   }
 
+  /* Standardize font sizes for mobile */
   .contact-info-container p, .nav-links li a {
     font-size: 1rem;
   }
 
+  /* Reduce experience subtitle font size */
   .experience-sub-title {
     font-size: 1.25rem;
   }
 
+  /* Adjust logo size for mobile */
   .logo {
     font-size: 1.5rem;
   }
 
+  /* Stack navigation links vertically with proper spacing */
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
 
+  /* Center profile picture container */
   .section__pic-container {
     justify-content: center;
   }
 
+  /* Reduce main subtitle font size for mobile */
   .section__text__p2 {
     font-size: 1.25rem;
   }
 
+  /* Optimize title size for mobile screens */
   .title {
     font-size: 2rem;
   }
 
+  /* Justify text for better mobile readability */
   .text-container {
     text-align: justify;
   }

@@ -366,8 +366,9 @@ article h3 {
 
 .project-img {
   border-radius: 2rem;
+  object-fit: cover;
   width: 90%;
-  height: 90%;
+  height: 250px;
 }
 
 .project-title {
